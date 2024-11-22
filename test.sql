@@ -13,14 +13,10 @@ SELECT * FROM Dealerships
 INNER JOIN Inventory ON Dealerships.DealershipID = Inventory.DealershipID
 WHERE Inventory.VIN = 2222;
 
-USE car_dealership;
-
 SELECT * FROM Dealerships
 INNER JOIN Inventory ON Dealerships.DealershipID = Inventory.DealershipID
 INNER JOIN Vehicles ON Inventory.VIN = Vehicles.VIN
 WHERE Vehicles.Make = 'Honda' AND Vehicles.Model = 'Civic' AND Vehicles.Color = 'Red';
-
-USE car_dealership;
 
 SELECT 
     Sales_contracts.ID,
